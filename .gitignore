@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# Run outputs (track the template, not individual runs)
+prototype/run_*/
+
+# Claude Code local settings (may contain personal paths/permissions)
+.claude/settings.local.json
