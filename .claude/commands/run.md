@@ -76,7 +76,14 @@ If the user confirms, begin acting as the **coordinator** per @prototype/_templa
 4. Pass JSON handoff files between moves (not markdown Output sections) — see @prototype/_template/rules/json-handoff-schema.md
 5. Each sub-agent runs self-validation per @prototype/_template/rules/recursive-validation.md before writing JSON output
 6. Each sub-agent appends audit data to `audit_trail.md`
-7. Follow the gate check and handoff protocol for each subsequent move (see @prototype/_template/workflow-plan.md for gate criteria per move)
+7. **After each sub-agent completes**, run the deterministic validation suite before proceeding to the gate check:
+   ```
+   python tests/validate.py <run_folder> --move N
+   ```
+   - If any **FAIL** results appear: do not proceed. Report the failures to the user, relaunch the sub-agent with specific correction guidance, and re-run validation after the retry.
+   - If only **WARN** results appear: surface them to the user for review, then proceed.
+   - If all **PASS**: proceed to the gate check as normal.
+8. Follow the gate check and handoff protocol for each subsequent move (see @prototype/_template/workflow-plan.md for gate criteria per move)
 
 ## Key References
 
