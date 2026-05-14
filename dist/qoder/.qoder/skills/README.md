@@ -1,0 +1,1 @@
+Full adaptation coming. See dist/claude-code/ for the complete implementation. Claude Code is the native platform for this plugin.
