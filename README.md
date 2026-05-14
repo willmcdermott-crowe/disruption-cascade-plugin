@@ -37,20 +37,18 @@ Six moves run in sequence as a **coordinator + sub-agent** pattern. Each move is
 
 **Requirements:** [Claude Code](https://claude.ai/code)
 
-```bash
-git clone https://github.com/willmcdermott-crowe/disruption-cascade-plugin
-cd disruption-cascade-plugin
-```
+1. **[Download ZIP](https://github.com/willmcdermott-crowe/disruption-cascade-plugin/archive/refs/heads/main.zip)**
+2. Unzip the downloaded file
+3. Open Claude Code in the `disruption-cascade-plugin-main/` folder
+4. Type `/run` to start
 
-### Claude Code
+No configuration required. Run outputs save into `prototype/` inside the folder.
 
-```bash
-# Project-specific (includes agent definitions and move templates)
-cp -r dist/claude-code/. your-project/
+---
 
-# Or global (commands and rules only — move templates won't be in the project)
-cp -r dist/claude-code/.claude/* ~/.claude/
-```
+### Other CLIs
+
+For CLI-specific installs, copy from the `dist/` folder after downloading and unzipping:
 
 ### OpenCode
 
