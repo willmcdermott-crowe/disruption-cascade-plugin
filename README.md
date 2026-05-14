@@ -35,20 +35,24 @@ Six moves run in sequence as a **coordinator + sub-agent** pattern. Each move is
 
 ## Installation
 
-**Requirements:** [Claude Code](https://claude.ai/code)
+**Requirements:** [Claude Code](https://claude.ai/code), Node.js
 
-1. **[Download ZIP](https://github.com/willmcdermott-crowe/disruption-cascade-plugin/archive/refs/heads/main.zip)**
-2. Unzip the downloaded file
-3. Open Claude Code in the `disruption-cascade-plugin-main/` folder
-4. Type `/run` to start
+```bash
+npx disruption-cascade-plugin
+```
 
-No configuration required. Run outputs save into `prototype/` inside the folder.
+Run outputs save to `prototype/` in the current folder. Open that folder in Claude Code and type `/run`.
+
+**Global install** (available in all projects):
+```bash
+npx disruption-cascade-plugin --global
+```
 
 ---
 
 ### Other CLIs
 
-For CLI-specific installs, copy from the `dist/` folder after downloading and unzipping:
+Copy from the `dist/` folder:
 
 ### OpenCode
 

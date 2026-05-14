@@ -1,0 +1,31 @@
+{
+  "name": "disruption-cascade-plugin",
+  "version": "1.0.0",
+  "description": "6-move ODI-based investment thesis engine for Claude Code. Takes a C-suite role and industry segment, produces a defensible Go / Conditional Go / No-Go recommendation.",
+  "bin": {
+    "disruption-cascade-plugin": "./bin/install.js"
+  },
+  "files": [
+    "bin/",
+    "dist/"
+  ],
+  "keywords": [
+    "claude-code",
+    "claude",
+    "ai",
+    "odi",
+    "jtbd",
+    "investment-thesis",
+    "strategy"
+  ],
+  "author": "willmcdermott-crowe",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/willmcdermott-crowe/disruption-cascade-plugin.git"
+  },
+  "homepage": "https://github.com/willmcdermott-crowe/disruption-cascade-plugin#readme",
+  "engines": {
+    "node": ">=14"
+  }
+}
